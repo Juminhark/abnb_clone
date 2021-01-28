@@ -1,14 +1,16 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import ExploreNavigator from './ExploreNavigator';
+// import ExploreNavigator from './ExploreNavigator';
 import HomeScreen from '../screens/Home';
-import ProfileScreen from '../screens/Profile';
+// import ProfileScreen from '../screens/Profile';
+import GalleryScreen from '../screens/Gallery';
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +22,7 @@ const HomeTabNavigator = (props) => {
       }}>
       <Tab.Screen
         name={'Explore'}
-        component={ExploreNavigator}
+        component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />
@@ -56,10 +58,19 @@ const HomeTabNavigator = (props) => {
       />
       <Tab.Screen
         name={'profile'}
-        component={ProfileScreen}
+        component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => (
             <EvilIcons name="user" size={25} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name={'Gallery'}
+        component={GalleryScreen}
+        options={{
+          tabBarIcon: ({color}) => (
+            <AntDesign name="picture" size={25} color={color} />
           ),
         }}
       />
