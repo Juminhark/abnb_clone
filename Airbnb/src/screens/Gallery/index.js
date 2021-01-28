@@ -61,6 +61,11 @@ const GalleryScreen = (props) => {
         offset: index * (IMAGE_SIZE + SPACING) - width / 2 + IMAGE_SIZE / 2,
         animated: true,
       });
+    } else {
+      topRef?.current.scrollToOffset({
+        offset: 0,
+        animated: true,
+      });
     }
   };
 
