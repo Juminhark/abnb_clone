@@ -92,7 +92,7 @@ buildscript {
 
   <meta-data
     android:name="com.google.android.geo.API_KEY"
-    android:value="AIzaSyDtg_z_tRSTfgPWRBRqvAqOttX95l_y62s"/>
+    android:value="Your Google maps API Key Here"/>
 
   <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 </application>
