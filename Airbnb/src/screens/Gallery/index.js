@@ -14,7 +14,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 
-// dotenv
+// dotenv 숨겨줄까나
 const API_KEY = '563492ad6f91700001000001846a2f0ad9d34cc9a1a3db8a97b80d8f';
 const API_URL =
   'https://api.pexels.com/v1/search?query=nature&orientation=portrait&size=small&per_page=20';

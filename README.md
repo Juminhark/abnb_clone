@@ -51,10 +51,59 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 > yarn add @react-navigation/material-top-tabs react-native-tab-view
 ```
 
+### Places Autocomplete
+
+- [install react-native-google-places-autocomplete](https://github.com/FaridSafi/react-native-google-places-autocomplete)
+
+```sh
+> yarn add react-native-google-places-autocomplete
+```
+
+- enable google api
+- make sure billing is enabled
+- get api key
+
+### Maps
+
+- [install react-native-maps](https://github.com/react-native-maps/react-native-maps/blob/master/docs/installation.md)
+
+```sh
+> yarn add react-native-maps -E
+```
+
+- "react-native": "0.63.4", Build configuration on Android
+
+```sh
+//! android/build.gradle
+...
+buildscript {
+    ext {
+        ...
+        playServicesVersion = "17.0.0" // or find latest version
+        androidMapsUtilsVersion = "2.2.0"
+    }
+}
+...
+
+
+//! android/app/src/main/AndroidManifest.xml
+<application>
+  ...
+
+  <meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="AIzaSyDtg_z_tRSTfgPWRBRqvAqOttX95l_y62s"/>
+
+  <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+</application>
+```
+
 ### gallery view
 
 - animated API
 - Pexels API
+
+- **scroll index - scrollToOffset**
 
 ### error
 
