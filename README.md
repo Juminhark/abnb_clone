@@ -98,12 +98,24 @@ buildscript {
 </application>
 ```
 
+### Carousel Flatlist
+
+- Render the Flatlist
+- Snap Effect(Carousel)
+- Sync with the Map
+
 ### gallery view
 
 - animated API
 - Pexels API
 
 - **scroll index - scrollToOffset**
+
+### Authentication
+
+### GraphQL API
+
+### [AWS Amplify && react-native](https://docs.amplify.aws/start/q/integration/react-native)
 
 ### error
 

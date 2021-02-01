@@ -5,7 +5,7 @@ import DestinationSearchScreen from '../screens/DestinationSearch';
 import GuestsScreen from '../screens/Guests';
 
 import HomeTabNavigator from './HomeTabNavigator';
-// import PostScreen from '../screens/PostScreen';
+import PostScreen from '../screens/PostScreen';
 
 import GalleryScreen from '../screens/Gallery';
 
@@ -36,13 +36,13 @@ const Router = (props) => {
             title: 'How many people?',
           }}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           name={'Post'}
           component={PostScreen}
           options={{
             title: 'Accommodation',
           }}
-        />{' '} */}
+        />
         <Stack.Screen name={'Gallery'} component={GalleryScreen} />
       </Stack.Navigator>
     </NavigationContainer>

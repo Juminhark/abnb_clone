@@ -1,17 +1,12 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {
-  StatusBar,
   FlatList,
   Image,
-  Animated,
   Text,
   View,
   Dimensions,
   StyleSheet,
   TouchableOpacity,
-  Easing,
-  SafeAreaViewBase,
-  SafeAreaView,
 } from 'react-native';
 
 // dotenv 숨겨줄까나
