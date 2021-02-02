@@ -111,11 +111,34 @@ buildscript {
 
 - **scroll index - scrollToOffset**
 
+### [AWS Amplify && react-native](https://docs.amplify.aws/start/q/integration/react-native)
+
+- [install and configure the Amplify CLI](https://www.youtube.com/watch?v=fWbM5DLh25U&feature=emb_title)
+
+```sh
+> npm install -g @aws-amplify/cli
+
+> amplify configure
+// region
+// user name
+// accessKeyId
+// secretAccessKey
+// Profile Name
+
+> amplify init
+
+> yarn add aws-amplify aws-amplify-react-native amazon-cognito-identity-js @react-native-community/netinfo
+```
+
 ### Authentication
 
-### GraphQL API
+```sh
+> amplify add auth
 
-### [AWS Amplify && react-native](https://docs.amplify.aws/start/q/integration/react-native)
+> amplify push
+```
+
+### GraphQL API
 
 ### error
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import ExploreNavigator from './ExploreNavigator';
 import HomeScreen from '../screens/Home';
-// import ProfileScreen from '../screens/Profile';
+import ProfileScreen from '../screens/Profile';
 import GalleryScreen from '../screens/Gallery';
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
@@ -57,20 +57,20 @@ const HomeTabNavigator = (props) => {
         }}
       />
       <Tab.Screen
-        name={'profile'}
-        component={HomeScreen}
-        options={{
-          tabBarIcon: ({color}) => (
-            <EvilIcons name="user" size={25} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
         name={'Gallery'}
         component={GalleryScreen}
         options={{
           tabBarIcon: ({color}) => (
             <AntDesign name="picture" size={25} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name={'profile'}
+        component={ProfileScreen}
+        options={{
+          tabBarIcon: ({color}) => (
+            <EvilIcons name="user" size={25} color={color} />
           ),
         }}
       />
