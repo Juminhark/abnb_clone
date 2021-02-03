@@ -140,6 +140,16 @@ buildscript {
 
 ### GraphQL API
 
+```sh
+> amplify add api
+
+> amplify push
+```
+
+- 이거 미쳤네
+- api / airbnb / build / schema.graphql
+- 위 루트에 명시된 모델에 따라 mutation / queries / subscriptions 자동 작성
+
 ### error
 
 - 1. zIndex 미적용 문제 : android에서는 elevation로 대체
