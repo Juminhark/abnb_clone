@@ -1,15 +1,13 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {View, FlatList, useWindowDimensions, Text} from 'react-native';
-import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
+import {View, FlatList, useWindowDimensions} from 'react-native';
+import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 import CustomMarker from '../../components/CustomMarker';
 import PostCarouselItem from '../../components/PostCarouselItem';
 
-import {API, graphqlOperation} from 'aws-amplify';
-import {listPosts} from '../../graphql/queries';
-
 const SearchResultsMaps = (props) => {
+  const {posts} = props;
+
   const [selectedPlaceId, setSelectedPlaceId] = useState(null);
-  const [posts, setPosts] = useState([]);
 
   const flatlist = useRef();
   const map = useRef();
@@ -23,20 +21,6 @@ const SearchResultsMaps = (props) => {
   });
 
   const width = useWindowDimensions().width;
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const postResult = await API.graphql(graphqlOperation(listPosts));
-
-        setPosts(postResult.data.listPosts.items);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-
-    fetchPosts();
-  }, []);
 
   useEffect(() => {
     if (!selectedPlaceId || !flatlist) {

@@ -8,16 +8,15 @@ import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
 
 const DestinationSearchScreen = (props) => {
   const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <GooglePlacesAutocomplete
         placeholder="Where are you going?"
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
-
-          navigation.navigate('Guests', {
-            viewport: details.geometry.viewport,
-          });
+          console.log(data, details);
+          navigation.navigate('Guests', {viewport: details.geometry.viewport});
         }}
         fetchDetails
         styles={{

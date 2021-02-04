@@ -1,6 +1,6 @@
 # airbnb_clone
 
-- [[adim_Savin - Build the Airbnb app in React Native_Tutorial for beginners](https://www.youtube.com/watch?v=ZxkmTsEYfg8)
+- [[Vadim_Savin - Build the Airbnb app in React Native_Tutorial for beginners](https://www.youtube.com/watch?v=ZxkmTsEYfg8)
 - [Vadim_Savin - Build the Airbnb app in React Native [Advance UI]](https://www.youtube.com/watch?v=2zy2qX1eR6E)
 - [Vadim_Savin - Build the Airbnb app in React Native & AWS Amplify](https://www.youtube.com/watch?v=ch2oOdnLkqw)
 - [Catalin Miron - Beautiful React Native gallery view - Synced FlatLists - Animated API - Pexels API](https://www.youtube.com/watch?v=gjC2oUJhePE)
@@ -138,7 +138,7 @@ buildscript {
 > amplify push
 ```
 
-### GraphQL API
+### GraphQL API : 이거 좋네
 
 ```sh
 > amplify add api
@@ -146,9 +146,24 @@ buildscript {
 > amplify push
 ```
 
-- 이거 미쳤네
-- api / airbnb / build / schema.graphql
-- 위 루트에 명시된 모델에 따라 mutation / queries / subscriptions 자동 작성
+- write graphql schema
+
+```ts
+// api / airbnb / build / schema.graphql
+// 루트에 명시된 모델에 따라 mutation / queries / subscriptions 자동 작성
+```
+
+- retrieve all accommodations
+- simple filtering (based on number of guests)
+
+### react-native-debugging
+
+- ctrl + m
+
+### check
+
+- Tenerife, Spain / 3
+- Palo Alto, USA / 1
 
 ### error
 
